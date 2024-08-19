@@ -4,8 +4,8 @@ console.log("Hello world")
 //variables and datatype (a comment )
 let x = 5; //number 
 console.log(x);
-let age = null 
-
+let age = null;
+let Z = undefined;
 var name = "Ann" // string
 const PI = 3.14 
 const car = { carname: "toyota", carcolor: "black"}
