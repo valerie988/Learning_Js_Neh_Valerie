@@ -29,3 +29,12 @@ while(x<10) {
     x++
 }
 console.log(x)
+
+for (let i = 0; i < 5; i++) {
+    console.log("I love coding");
+}
+for (let i = 0; i < 10; i++) {
+   if(i%2==0){
+    console.log(i);
+   }
+}
