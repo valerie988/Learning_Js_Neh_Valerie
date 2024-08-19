@@ -43,8 +43,16 @@ for (let i = 0; i < 10; i++) {
 function RanNum(min, max) {
     return parseInt(Math.random()*50);
 }
-let Number = RanNum(1,50);
-console.log("randomNumber =",Number);
 
-var num = int(input("enter a Random number"))
+let rand = RanNum(1,50);
+console.log("randomNumber =",rand);
 
+let num = parseInt(prompt("enter a Random number"))
+console.log(num);
+
+if(rand == num){
+    console.log("Wooowwww you won");
+}
+else{
+    console.log("Oooopss you lost"); 
+}
