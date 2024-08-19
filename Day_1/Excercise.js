@@ -6,6 +6,7 @@ let x = 5; //number
 console.log(x);
 let age = null;
 let Z = undefined;
+
 var name = "Ann" // string
 const PI = 3.14 
 const car = { carname: "toyota", carcolor: "black"}
@@ -24,12 +25,13 @@ else if(temp>0 && temp<=25){
 }
 
 console.log("3+5");
+console.log(8*9)
 
 x = 5;
 while(x<10) {
-    x++
+    x++;
 }
-console.log(x)
+console.log(x);
 
 for (let i = 0; i < 5; i++) {
     console.log("I love coding");
