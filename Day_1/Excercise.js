@@ -1,7 +1,7 @@
 "use strict"
 console.log("Hello world")
 
-//variables a comment 
+//variables (a comment )
 let x = 5; //number 
 console.log(x);
 
@@ -38,3 +38,13 @@ for (let i = 0; i < 10; i++) {
     console.log(i);
    }
 }
+
+//Guessing number game
+function RanNum(min, max) {
+    return parseInt(Math.random()*50);
+}
+let Number = RanNum(1,50);
+console.log("randomNumber =",Number);
+
+var num = int(input("enter a Random number"))
+
