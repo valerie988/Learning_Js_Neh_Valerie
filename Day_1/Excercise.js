@@ -1,9 +1,10 @@
 "use strict"
 console.log("Hello world")
 
-//variables (a comment )
+//variables and datatype (a comment )
 let x = 5; //number 
 console.log(x);
+let age = null 
 
 var name = "Ann" // string
 const PI = 3.14 
