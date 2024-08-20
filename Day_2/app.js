@@ -17,4 +17,7 @@ console.log(x);
 function temp(fahrenheit) {
     return (5/9)*(fahrenheit-32)
 }
-console.log("The temperature is ", temp(67), "celssuis");
+console.log("The temperature is ", temp(67), "celssuis"); //using function as variable value
+
+//function expression
+const X = function mul(a,b) { return a*b }
