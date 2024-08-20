@@ -17,4 +17,4 @@ console.log(x);
 function temp(fahrenheit) {
     return (5/9)*(fahrenheit-32)
 }
-console.log(temp(77))
+console.log("The temperature is ", temp(67), "celssuis");
