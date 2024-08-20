@@ -3,5 +3,6 @@
 function add(a,b,c) {
     return a+b+c;
 }
-let result = add(2,5,9)  //function call
+let result = add(2,5,9)  //function call or invocation
 console.log(result)
+
