@@ -22,14 +22,19 @@ console.log("The temperature is ", temp(67), "celsuis"); //using function as var
 //function expression
 const X = function (a,b) { return a*b } //anonymous function
 
-/*self-invoking function
-(function () {
-    let x = "Hello"
-})();*/
+// self-invoking function
+
+let anonymous = (function () {
+    let z = "Hellooooo";
+    console.log(z);
+})()
+
+console.log(anonymous);
+
 
 //arrow function
-const div = (a,b) => a/b
-console.log((10,2));
+const div = (a,b) => a*b
+console.log((10,7));
 
 //sum all numbers
 function sumAll() {
@@ -41,3 +46,19 @@ function sumAll() {
 }
 let res =sumAll(2,15,54,67)
 console.log("The sum of all the numbers is", res );
+
+let me = myFunction()
+function myFunction() {
+    return this
+}
+console.log(me);
+
+//function call
+const person = {
+    firstName: "Neh",
+    lastName: "Valerie",
+    fullName: function () {
+        return this.firstName + " " + this.lastName;
+    }
+}
+console.log(person.fullName())
