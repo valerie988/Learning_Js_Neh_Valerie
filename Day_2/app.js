@@ -13,4 +13,8 @@ function product(p,q) {
 }
 console.log(x);
 
-
+//function that converts temp in fahrenheit to celsuis
+function temp(fahrenheit) {
+    return (5/9)*(fahrenheit-32)
+}
+console.log(temp(77))
