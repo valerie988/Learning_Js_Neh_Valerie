@@ -78,3 +78,7 @@ console.log(person.fullName.apply(person3, ["Maryland", "USA"]))
 
 let maximum = Math.max(6,3,8)
 console.log("The maximum number is ",maximum);
+
+let maxi = Math.max.apply(" ", [4,7,1])
+console.log("The maximum number is ",maxi);
+
