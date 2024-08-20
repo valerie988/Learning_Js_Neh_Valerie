@@ -26,3 +26,7 @@ const X = function (a,b) { return a*b } //anonymous function
 (function () {
     let x = "Hello"
 })();
+
+//arrow function
+const div = (a,b) => a/b
+console.log((10,2));
