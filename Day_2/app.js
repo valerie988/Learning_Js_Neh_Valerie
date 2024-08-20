@@ -53,12 +53,28 @@ function myFunction() {
 }
 console.log(me);
 
-//function call
-const person = {
-    firstName: "Neh",
-    lastName: "Valerie",
-    fullName: function () {
-        return this.firstName + " " + this.lastName;
+//function call and apply
+const person = { 
+    fullName: function (city, country) {
+        return this.firstName + " " + this.lastName + " ," + city + " ," + country;
     }
 }
-console.log(person.fullName())
+
+const person1 = {
+    firstName: "Neh",
+    lastName: "Valerie",
+}
+const person2 = {
+    firstName: "Che",
+    lastName: "Ravonne",
+}
+const person3 = {
+    firstName: "Eyinga",
+    lastName: "Mazarine",
+}
+console.log(person.fullName.call(person1))
+console.log(person.fullName.call(person2, "Yaounde", "Cameroon"))
+console.log(person.fullName.apply(person3, ["Maryland", "USA"]))
+
+let maximum = Math.max(6,3,8)
+console.log("The maximum number is ",maximum);
