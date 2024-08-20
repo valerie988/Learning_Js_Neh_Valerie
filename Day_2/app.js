@@ -59,7 +59,6 @@ const person = {
         return this.firstName + " " + this.lastName + " ," + city + " ," + country;
     }
 }
-
 const person1 = {
     firstName: "Neh",
     lastName: "Valerie",
@@ -81,4 +80,15 @@ console.log("The maximum number is ",maximum);
 
 let maxi = Math.max.apply(" ", [4,7,1])
 console.log("The maximum number is ",maxi);
+
+//function closure
+let f = 5 //global variable
+function myFunction() {
+    return f*f;
+}
+
+function myFunction() {
+    let f = 4; //local variable
+    return f*f;
+}
 
