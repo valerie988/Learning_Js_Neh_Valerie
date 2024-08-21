@@ -48,11 +48,22 @@ const newlength = animals3.push("Eagle");
 console.log(animals3)
 console.log(animals3.indexOf("donkey") !== -1);
 
-animals3.splice(2)
+//remove element from an index to the end
+animals3.splice(0,2) // (start, stop)
 console.log(animals3)
 
+//remove the first element in the array
 animals3.shift()
 console.log(animals3)
+animals3.unshift("frog") // add element at first index
+console.log(animals3)
+animals3.splice(0,2, "fox", "hen")   //replacing the items using theri indices
+console.log(animals3)
+
+//interate through an array 
+for (const animal of animals3) {
+    console.log(animal)
+}
 
 //creating a string
 const animalString = animals.join(", ")
