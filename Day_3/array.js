@@ -138,5 +138,5 @@ function addItem(nameI, quantity) {
     let total = price * quantity
     console.log("Your items cost:", total);
 }
-addItem();
+//addItem();
  
