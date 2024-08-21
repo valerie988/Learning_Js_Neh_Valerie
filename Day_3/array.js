@@ -51,6 +51,9 @@ console.log(animals3.indexOf("donkey") !== -1);
 animals3.splice(2)
 console.log(animals3)
 
+animals3.shift()
+console.log(animals3)
+
 //creating a string
 const animalString = animals.join(", ")
 console.log(animalString)
