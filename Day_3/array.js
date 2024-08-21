@@ -57,7 +57,8 @@ animals3.shift()
 console.log(animals3)
 animals3.unshift("frog") // add element at first index
 console.log(animals3)
-animals3.splice(0,2, "fox", "hen")   //replacing the items using theri indices
+
+animals3.splice(0,2, "fox", "hen")   //replacing the items using their indices
 console.log(animals3)
 
 //interate through an array 
@@ -72,4 +73,14 @@ animals3.forEach((index, item, array) => {
 //creating a string
 const animalString = animals.join(", ")
 console.log(animalString)
+
+//concatente arrays
+let combinedAnimal = animals.concat(animals2)
+console.log(combinedAnimal);
+
+//copy an array
+console.log([...combinedAnimal]);
+console.log(Array.from(animals));
+console.log(animals2.slice());
+
 
