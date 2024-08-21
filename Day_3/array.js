@@ -83,4 +83,7 @@ console.log([...combinedAnimal]);
 console.log(Array.from(animals));
 console.log(animals2.slice());
 
+//convert an array to a string and vice versa
+console.log(JSON.stringify(animals2));
+console.log(JSON.parse(JSON.stringify(animals2)));
 
