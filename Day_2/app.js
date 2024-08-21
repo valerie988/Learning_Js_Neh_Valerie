@@ -6,7 +6,7 @@ function add(a,b,c) {
 let result = add(2,5,9)  //function call or invocation
 console.log(result)
 
-//function call 
+//function call before function itself
 let x = product(7,3)
 function product(p,q) {
     return p*q //return value to x
@@ -91,15 +91,13 @@ function myFunction() {
     let f = 4; //local variable
     return f*f;
 }
-
+let counter = 0; 
 const count = (function () {
-    let counter = 0;
     return function () {
         counter += 1;
         return counter
     }
 })();
-count()
 count()
 count()
 console.log(count())
