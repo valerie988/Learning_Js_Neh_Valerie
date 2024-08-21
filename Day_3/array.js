@@ -87,3 +87,37 @@ console.log(animals2.slice());
 console.log(JSON.stringify(animals2));
 console.log(JSON.parse(JSON.stringify(animals2)));
 
+console.log(animals === animals2)
+
+//creating a 2-D array
+const board = [
+    ["R", "N", "B", "Q", "K", "B", "N", "R"],
+    ["P", "P", "P", "P", "P", "P", "P", "P"],
+    [" ", " ", " ", " ", " ", " ", " ", " "],
+    [" ", " ", " ", " ", " ", " ", " ", " "],
+    [" ", " ", " ", " ", " ", " ", " ", " "],
+    [" ", " ", " ", " ", " ", " ", " ", " "],
+    ["p", "p", "p", "p", "p", "p", "p", "p"],
+    ["r", "n", "b", "q", "k", "b", "n", "r"],
+  ];
+  
+  console.log(`${board.join("\n")}\n\n`);
+  
+  // Move King's Pawn forward 2
+  board[4][4] = board[6][4];
+  board[6][4] = " ";
+  console.log(board.join("\n"));
+;
+
+const mat = [
+    ["a","b","c"],
+    ["1","2","3"],
+    ["A","B","C"],
+]
+console.log(`${mat.join("\n")}`);
+
+const timetable = [];
+for (let i = 1; i <= 13; i++) {
+    timetable.push([i*2, i*3 , i*4, i*5, i*6, i*7, i*8, i*9, i*10, i*11, i*12]) 
+}
+console.table(timetable)
