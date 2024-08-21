@@ -121,3 +121,22 @@ for (let i = 1; i <= 13; i++) {
     timetable.push([i*2, i*3 , i*4, i*5, i*6, i*7, i*8, i*9, i*10, i*11, i*12]) 
 }
 console.table(timetable)
+
+
+//Shopping Cart
+let cart = [];
+
+//add items in cart
+let price = 2000;
+function addItem(nameI, quantity) {
+    nameI = prompt("Enter the item name: ");
+    quantity = parseInt(prompt("Enter number of items:"));
+    const item = { nameI, quantity};
+    cart.push(item);
+    console.log(nameI,quantity)
+    console.log("One cost:",price,"frs");
+    let total = price * quantity
+    console.log("Your items cost:", total);
+}
+addItem();
+ 
