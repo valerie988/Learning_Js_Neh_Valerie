@@ -32,10 +32,14 @@ const newAnimals = console.log(animals.sort())
 //creating an array using array() constructor
 const animals2 = new Array("fish", "rat", "elephant")
 console.log(animals2)
+console.log(animals2[1])  // getting an item using its index
+console.log(animals2[8])
 
 //using string.prototype.Split()
 const animals3 = "donkey, lion, monkey".split(", ")
 console.log(animals3)
+console.log(animals3.indexOf("monkey"));   //get the index of an item
+
 
 //creating a string
 const animalString = animals.join(", ")
