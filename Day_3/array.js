@@ -64,6 +64,10 @@ console.log(animals3)
 for (const animal of animals3) {
     console.log(animal)
 }
+//calling a function on each item
+animals3.forEach((index, item, array) => {
+    console.log(index, item)
+});
 
 //creating a string
 const animalString = animals.join(", ")
