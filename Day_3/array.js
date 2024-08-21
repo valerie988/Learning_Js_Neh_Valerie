@@ -2,8 +2,14 @@
 
 //array length
 const animals = []
-animals.push("cat", "dog", "rabbit")
-console.log("There are ", animals.length, "animals")
-animals[7] = "pig"
-console.log("There are ", animals.length, "animals")
-console.log(animals)
+animals.push("cat", "dog", "rabbit");
+console.log("There are ", animals.length, "animals");
+animals[7] = "pig";
+console.log("There are ", animals.length, "animals");
+console.log(Object.keys(animals));
+
+//reducing the length
+animals.length = 2;
+console.log(Object.keys(animals));
+console.log("There are ", animals.length, "animals");
+
