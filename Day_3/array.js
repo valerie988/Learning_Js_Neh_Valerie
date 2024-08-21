@@ -34,13 +34,24 @@ const animals2 = new Array("fish", "rat", "elephant")
 console.log(animals2)
 console.log(animals2[1])  // getting an item using its index
 console.log(animals2[8])
+animals2.pop()
+console.log(animals2)
+
 
 //using string.prototype.Split()
 const animals3 = "donkey, lion, monkey".split(", ")
 console.log(animals3)
 console.log(animals3.indexOf("monkey"));   //get the index of an item
+console.log(animals3.includes("tiger"));   //checking if an item is in an array
 
+const newlength = animals3.push("Eagle");
+console.log(animals3)
+console.log(animals3.indexOf("donkey") !== -1);
+
+animals3.splice(2)
+console.log(animals3)
 
 //creating a string
 const animalString = animals.join(", ")
 console.log(animalString)
+
