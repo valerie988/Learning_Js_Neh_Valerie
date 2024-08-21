@@ -38,4 +38,5 @@ const animals3 = "donkey, lion, monkey".split(", ")
 console.log(animals3)
 
 //creating a string
-const animalString = animals.jion()
+const animalString = animals.join(", ")
+console.log(animalString)
