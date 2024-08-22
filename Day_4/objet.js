@@ -36,6 +36,13 @@ let x = student;
 x.class = "form3"
 console.log(x);
 
+console.log(student.firstName, "is in", student.class )
 
+// add a property
+student.country = "cameroon";
+console.log(student)
 
+//delete a property
+delete student.class;
+console.log(student)
 
