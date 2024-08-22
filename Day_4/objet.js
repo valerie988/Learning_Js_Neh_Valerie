@@ -22,3 +22,20 @@ console.log(person1)
 console.log(fruit["color"])
 console.log(fruit.name);
 
+const student = {
+    firstName: "Tantoh",
+    lastName: "Thierry",
+    class: "form2",
+    fullname : function(){
+        return this.firstName + " " + this.lastName;
+    }
+};
+console.log(student.fullname())
+
+let x = student;
+x.class = "form3"
+console.log(x);
+
+
+
+
