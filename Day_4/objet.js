@@ -31,6 +31,7 @@ const student = {
     }
 };
 console.log(student.fullname())
+console.log(student.fullname().toUpperCase())
 
 let x = student;
 x.class = "form3"
@@ -59,3 +60,13 @@ const school = {
 console.log(school);
 console.log(school.class.student);
 
+//displaying objects
+document.getElementById("demo").innerHTML = school.class.size;
+
+let text = ""
+for (const x in school) {
+    text += school[x] + "";
+} 
+document.getElementById("demo").innerHTML = text;
+
+//using object.value()
