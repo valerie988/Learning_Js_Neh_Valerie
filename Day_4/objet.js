@@ -27,7 +27,7 @@ const student = {
     lastName: "Thierry",
     class: "form2",
     fullname : function(){
-        return this.firstName + " " + this.lastName;
+        return this.firstName + " " + this.lastName;  //method in js
     }
 };
 console.log(student.fullname())
@@ -44,5 +44,18 @@ console.log(student)
 
 //delete a property
 delete student.class;
+delete student["lastName"]
 console.log(student)
+
+//nested objects
+const school = {
+    name: "FCSS",
+    location: "Obili",
+    class: {
+        student: 34,
+        size: "large"
+    }
+}
+console.log(school);
+console.log(school.class.student);
 

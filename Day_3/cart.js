@@ -1,22 +1,22 @@
 "use strict"
-var submit = document.querySelector(".sum")
+const submit = document.getElementById("sum")
 
-const cart = function () {
-    var quantity = parseInt(document.querySelectorAll("#quantity").value);
-    var price = parseInt(document.querySelectorAll("#price").value);
-    var items = document.querySelectorAll(".item")
-    var total = document.querySelector(".totalP")
-    let costPrice = 0;
+const cart = () => {
+    const total = document.querySelector(".totalP")
+    const items = document.querySelectorAll(".item");
+    let totalCostPrice = 0;
     items.forEach(function (item) {
-        costPrice += quantity * price;
-        console.log(`Total costPrice: ${costPrice}`)
-    });
-    total.textContent = costPrice;
+        let price = parseInt(item.querySelector(".price").textContent)
+        let quantity = parseInt(item.querySelector(".quantity").value)
+        let costPrice = price * quantity;
+        totalCostPrice += costPrice;
+    })
+    total.textContent = totalCostPrice;
+
 }
 console.log(cart())
 
 submit.addEventListener(`click`, function (e) {
-    console.log("click");
-    
+
     cart()
 })
