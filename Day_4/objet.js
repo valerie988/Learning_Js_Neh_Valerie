@@ -84,3 +84,25 @@ for (let [item,value] of Object.entries(items)) {
     Text += item + ": " + value + "<br>";
 }
 document.getElementById("demo").innerHTML = Text;
+
+//object constructors
+ function Uss(Name, age, color, height) {
+    this.Name = Name
+    this.age = age
+    this.color = color
+    this.height = height
+ };
+ const student1 = new Uss("mary", 12, "fair", 1.6);
+ console.log(student1)
+ document.getElementById("demo").innerHTML = student1.color;
+
+ function books(Name,phone,address,email) {
+    this.Name = Name;
+    this.phone = phone;
+    this.address = address;
+    this.email = email;
+};
+const Mom = new books("Loveline", 676963139, "soa", "loveline2@gmail.com")
+document.getElementById("demo").innerHTML = Mom.Name;
+
+
