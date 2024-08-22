@@ -70,3 +70,17 @@ for (const x in school) {
 document.getElementById("demo").innerHTML = text;
 
 //using object.value()
+const myArrray = Object.values(school)
+document.getElementById("demo").innerHTML = myArrray;
+
+//using object.entries()
+const items = {
+    pen: 20,
+    books: 100,
+    rulers: 15,
+}
+let Text = ""
+for (let [item,value] of Object.entries(items)) {
+    Text += item + ": " + value + "<br>";
+}
+document.getElementById("demo").innerHTML = Text;
