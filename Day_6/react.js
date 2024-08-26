@@ -9,4 +9,4 @@ function errorCallback(error) {
 }
 createAudioFileAsync(audioSettings, successCallback, errorCallback)
 
-createAudioFileAsync(audioSettings.then(successCallback, errorCallback))
+createAudioFileAsync(audioSettings.then(successCallback, e))
