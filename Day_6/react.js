@@ -8,3 +8,5 @@ function errorCallback(error) {
     console.error(`Error generating audio file: ${error}`);
 }
 createAudioFileAsync(audioSettings, successCallback, errorCallback)
+
+createAudioFileAsync(audioSettings.then(successCallback, errorCallback))
