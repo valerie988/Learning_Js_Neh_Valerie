@@ -64,3 +64,13 @@ function remNeg(num,callback) {
     return myArray;
 }
 remNeg()
+
+setTimeout(() => {
+    myDisplayer("I love CMR")
+}, 2000);
+
+setInterval(() => {
+    let d = new Date();
+    myDisplayer(d.getFullYear() + ":" + d.getMonth() + ":" + d.getDay())
+    myDisplayer(d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds())
+}, 1000);
