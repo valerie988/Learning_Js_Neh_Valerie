@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: beige;
+    height: 100vh;
+}
+#blog{
+    width: 200px;
+    background-color: rgb(6, 6, 35);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+img{
+    width: 180px;
+    border-radius: 5px;
+}
