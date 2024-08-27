@@ -74,3 +74,30 @@ setInterval(() => {
     myDisplayer(d.getFullYear() + ":" + d.getMonth() + ":" + d.getDay())
     myDisplayer(d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds())
 }, 1000);
+
+//promise syntax
+function myDisplayer(some){
+    document.getElementById("demo").innerHTML =some;
+}
+let myPromise = new Promise (function(myResolve, myReject) {
+    myResolve()
+    myReject()
+})
+myPromise.then(
+    function(value){},
+    function(error){}
+)
+
+myPromise = new Promise (function(myResolve, myReject) {
+    let x = 0;
+   if (x == 0){
+    myResolve("Ok")
+   }else{
+    myReject("Error")
+   }
+})
+myPromise.then(
+    function(value){myDisplayer(value)},
+    function(error){myDisplayer(error)}
+)
+

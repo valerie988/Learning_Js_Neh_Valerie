@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./react.js" defer></script>
+    <!--<script src="./react.js" defer></script>-->
+    <script src="./app.js" defer></script>
 </head>
+
 <body>
-    <p id="demo"></p>
+    <main>
+        <div class="person-selector">
+            <button class="button person-selector-button active-person" id="Rav-selector">Rav</button>
+            <button class="button person-selector-button " id="Val-selector">Val</button>
+        </div>
+        <div class="chat-container">
+            <h3 class="chat-header">Rav chatting...</h3>
+            <div class="chat-messages">
+                <div class="message blue-bg">
+                    <div class="message-sender">Rav</div>
+                    <div class="message-text">Hey Vale, what`s up?</div>
+                    <div class="message-timestamp">6:30am</div>
+                </div>
+                <div class="message gray-bg">
+                    <div class="message-sender">Val</div>
+                    <div class="message-text">Not much, just watching a movie: God`s Not Dead</div>
+                    <div class="message-timestamp">6:35am</div>
+                </div>
+            </div>
+            <form class="chat-input-form">
+                <input type="text" class="chat-input" required placeholder="Type here Rav...">
+                <button type="submit" class="button send-button">send</button>
+            </form>
+            
+            <button class="button Clear-chat-button">Clear Chat</button>
+        </div>
+    </main>
+
 </body>
+
 </html>
