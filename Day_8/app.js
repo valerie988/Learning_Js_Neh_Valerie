@@ -43,4 +43,24 @@ let foodmap = new Map([["rice", 1000], ["eru", 2000], ["ndole", 1500]])
     console.log(entry);
  }
 
- 
+ foodmap.forEach((key, value, map) => {
+    console.log(`${key}: ${value}`);
+    
+ });
+
+ //map from object
+ let me = {
+    name: "valerie",
+    age: 19,
+    town: "Yaounde"
+ }
+ let student = new Map(Object.entries(me))
+ console.log(student);
+
+//Object from map
+let num = Object.fromEntries([
+    ["book", 12],
+    ["ruler", 8],
+    ["pen", 2],
+])
+console.log(num);
