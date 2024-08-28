@@ -25,5 +25,22 @@ map.set(1, "hello")
 .set(true, "bool")
 console.log(map);
 
+//interating over maps
 
-interating over maps
+//map.key() method
+let foodmap = new Map([["rice", 1000], ["eru", 2000], ["ndole", 1500]])
+ for (const key of foodmap.keys()) {
+    console.log(key);
+ }
+
+ //using the value method
+ for (const value of foodmap.values()) {
+    console.log(value);
+ }
+
+ //using the entry method
+ for (const entry of foodmap) {
+    console.log(entry);
+ }
+
+ 
