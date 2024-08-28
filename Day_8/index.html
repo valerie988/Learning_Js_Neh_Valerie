@@ -3,10 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Task Scheduler</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="./app.js"></script>
+    <main>
+        <h3>My Schedular</h3>
+        <form id="taskForm">
+            <input type="text" class="task-name" placeholder="Task Name">
+            <input type="date" class="task-dateline">
+            <select class="task-priority">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <select class="task-state">
+                <option value="Pending">Pending</option>
+                <option value="Completed">Completed</option>
+            </select>
+            <button>Add Task</button>
+        </form>
+        <h3>My Activity</h3>
+        <div id="Activity"></div>
+    </main>
+    <script src="schedular.js"></script>
 </body>
 </html>

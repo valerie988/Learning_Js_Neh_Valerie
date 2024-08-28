@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(160, 156, 156);
+}
+main{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    width: 30%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+input, select{
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid rgb(141, 141, 141);
+}
+button{
+    width: 100px;
+   padding: 5px;
+   color: white;
+   border: none;
+   border-radius: 10px;
+   margin-left: 40%;
+   background-color: rgb(60, 134, 232);
+}
