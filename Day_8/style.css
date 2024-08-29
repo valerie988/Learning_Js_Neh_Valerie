@@ -36,3 +36,17 @@ button{
    margin-left: 40%;
    background-color: rgb(60, 134, 232);
 }
+#activity{
+    background-color: rgb(244, 247, 250);
+    padding: 10px;  
+    margin-top: 10px;
+}
+div{
+    background-color: rgb(244, 247, 250);
+    margin-bottom: 10px;
+
+    h3{
+        font-weight: 510;
+        font-size: large;
+    }
+}

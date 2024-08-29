@@ -20,6 +20,14 @@ form.addEventListener(`submit`, (e) => {
 
     myArray.push(task)
 
-    console.log(myArray);
-    
+    const tasknameSet = new Set()
+
+    tasknameSet.add(myArray)
+
+    const activity = document.querySelector("#activity")
+    const activitylist = document.createElement("div")
+   
+    activitylist.innerHTML = `<h3>Task: ${taskname}</h3> <p>Dateline: ${taskdateline}</p> <p>Priority: ${taskpriority}</p> <p>State: ${taskstate}</p>`
+    activity.appendChild(activitylist)
+
 })
