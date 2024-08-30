@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
+    background-color: rgb(7, 30, 58);
+}
+main{
+    width: 35%;
+    h3{
+        color: white;
+    }
+    p, a{
+        font-weight: lighter;
+        color: rgb(218, 216, 216);
+        font-size: small;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+.head1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .light{
+        display: flex;
+        gap: 5px;
+        cursor: pointer;
+    }
+}
+.searchForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(25, 43, 78);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    input{
+        width: 270px;
+        padding: 4px;
+        border: none;
+        text-decoration-color: none;
+     
+       font-size: small;
+       color: aliceblue;
+       font-weight: 600;
+       background-color: rgb(25, 43, 78);
+    }
+    button{
+        cursor: pointer;
+        padding: 8px;
+        width: 6em;
+        border: none;
+        color: aliceblue;
+        border-radius: 5px;
+        background-color: rgb(44, 117, 201);
+    }
+}
+section{
+    display: flex;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 1em;
+    background-color: rgb(25, 43, 78);
+
+    .right{
+        width: 20em;
+    }
+}
+.left img{
+    border-radius: 50%;
+    width: 4em;
+}
+.addresses, .followers, .octocat{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.addresses{
+    border-radius: 10px;
+}
+.followers{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: rgb(21, 24, 39);
+    padding: 5px;
+    border-radius: 5px;
+}
+.address{
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
